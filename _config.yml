@@ -1,9 +1,9 @@
 # site settings
-title: WEB + AI Blog
+title: WEBAI Blog
 subtitle: Developer
 email: skandla2002@gmail.com
 description: I will be a good developer!
-url: "https://skandla.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url: "https://skandla2002.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: ""
 author:
 street_address: SDS East Campus
