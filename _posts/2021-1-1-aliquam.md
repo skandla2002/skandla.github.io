@@ -62,8 +62,8 @@ image: assets/images/pic01.jpg
 
 ```
 > first
->   > second
->   >   > third
+>    > second
+>    >    > third
 ```
 
 > first
@@ -101,28 +101,30 @@ image: assets/images/pic01.jpg
 + 들여쓰기
    
 ```
+// code
 normal paragraph:
+
     code block
+
 end code block
 ```
    
-normal paragraph: 
+normal paragraph:
+
     code block
+
 end code block
 
 + 코드 블럭    
 : 2가지 방식 사용함   
 
 1. ```<pre><code>{code}</code></pre>``` 이용
-   
 <pre><code>class List {
     constructor(props){
         super(props);
     }
 }</code></pre>
-   
 2. 코드블럭코드(<code>```</code>)를 이용하는 방법
-   
 ```
 class List {
     constructor(props){
