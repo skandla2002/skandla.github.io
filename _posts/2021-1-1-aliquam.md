@@ -73,11 +73,13 @@ image: assets/images/pic01.jpg
 3. third
 
 + 순서 없는 목록(글머리 기호: *, +, -)
+
 ```
 * first
     + second
         - third
 ```
+
 * first
     + second
         - third
@@ -96,7 +98,8 @@ end code block
 
 + 코드 블럭
 : 2가지 방식 사용함
-    * ```<pre><code>{code}</code></pre>``` 이용
+
+1. ```<pre><code>{code}</code></pre>``` 이용
 <pre><code>
     class List {
         constructor(props){
@@ -104,7 +107,8 @@ end code block
         }
     }
 </code></pre>
-    * 코드블럭코드(```)를 이용하는 방법 
+
+2. 코드블럭코드(```)를 이용하는 방법 
 ```
 class List {
     constructor(props){
@@ -125,6 +129,7 @@ ______________
 
 ## 링크
 + 참조 링크
+
 ```
 [link keyword][id]
 [id]: URL "Title Area"
@@ -133,31 +138,36 @@ ______________
 Link: [Google][googleLink]
 [googleLink]: https://google.com "Go Google!!!"
 ```
+
 Link: [Google][googleLink]
 [googleLink]: https://google.com "Go Google!!!"
 
 + 외부 링크
+
 ```
 사용문법: [Title](link)
 
 //code
 구글연결: [Google](https://google.com, "google link")
 ```
+
 구글연결: [Google](https://google.com, "google link")
 
 + 자동연결
+
 ```
 일반적인 URL 혹은 이메일 주소 링크
 
 // code
 * 외부링크: <http://google.com/>
 * 이메일 링크: <skandla2002@gmail.com>
-
 ```
+
 * 외부링크: <http://google.com/>
 * 이메일 링크: <skandla2002@gmail.com>
 
 ## 강조
+
 ```
 *text*
 _text_
@@ -165,21 +175,25 @@ _text_
 __text__
 ~~text~~
 ```
-*text*
-_text_
-**text**
-__text__
-~~text~~
+
+*text*   
+_text_   
+**text**   
+__text__   
+~~text~~   
 
 ## 이미지
+
 ```
 ![Alt text](../assets/images/pic04.jpg)
 ![Alt text](../assets/images/pic04.jpg, "Title Text: Wolf")
 ```
+
 ![Alt text](../assets/images/pic04.jpg)
 ![Alt text](../assets/images/pic04.jpg, "Title Text: Wolf")
 
 + 사이즈 조절: ```<im width="" height=""></img>```
+
 ```
 <img src="../assets/images/pic04.jpg" width="400px" height="250px" title="px 크기 설정" alt="wolf">
 <br/>
@@ -192,6 +206,7 @@ __text__
 
 ## 줄바꿈
 3칸이상 띄어쓰기('   ')
+
 ```
 줄바꿈을 위해서는 이렇게 한다.   
 바뀐줄
@@ -207,3 +222,7 @@ __text__
 
 ---------
 + 참고: https://gist.github.com/ihoneymon/652be052a0727ad59601
+
+
+
+---------
