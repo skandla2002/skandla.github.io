@@ -73,6 +73,12 @@ let v1: (1 | 2 | 3) & ( 2 | 3);
 v1 = 3;
 v1 = 1; // error
 
+// type 키워드로 타입에 별칭 주기
+type Width = number | string;
+let width: Width;
+width = 100;
+width = '100px';
+
 ```
 
 ---------
