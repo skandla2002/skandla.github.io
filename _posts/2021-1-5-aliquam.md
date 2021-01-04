@@ -2,7 +2,7 @@
 layout: post
 title: TypeScript - 4
 description: TypeScript, 생산성, 인터페이스
-# image: assets/images/pic01.jpg
+image: assets/images/notebook-dev.jpg
 ---
 
 # 오늘의 느낌:   
