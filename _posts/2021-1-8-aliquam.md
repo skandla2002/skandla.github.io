@@ -9,8 +9,6 @@ image: assets/images/notebook-dev.jpg
 
 어제 / 오늘 배운 알고리즘을 복습하기 위해 작성해 본다.
 
-# 생성한 Repo: https://github.com/skandla2002/pwa_sample.git
-
 # Index Tree: 포화 바이너리 트리 구조, 불할하여 계산할때 사용함
 
 ## 순서:
