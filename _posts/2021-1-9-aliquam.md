@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Algorytm - BackTracking, DFS, BFS
-description: BackTracking, DFS, BFS
+title: Algorytm - BackTracking
+description: BackTracking
 image: assets/images/notebook-dev.jpg
 ---
 
@@ -11,84 +11,70 @@ image: assets/images/notebook-dev.jpg
 
 # BackTracking: 특정 범위를 지정하여 탐색할때 사용함
 
+## 문제: N개의 좌 -> 우는 순서를 위 -> 아래는 점수를 나타낼때, 각 숫자의 순서와 숫자에 따른 점수가 arrData 내에 존재하면, 이때 숫자를 정렬할때 최대 점수의 합을 구하면?
+
 ## 순서:
 
-> 1. Tree 초기화:
+> 1. BackTracking 인자 선언 및 초기화: 
+> 점수 등의 포인트 / 방문 flag 배열 / 결과값 저장
+```
+// 3개의 선택을 할까 가장 큰 점수
+let N = 3; // 종료지점 계속 변경
+let arrData = [[0,0,0, 0], [1,2,3, 4], [4, 5, 6, 7], [7, 8, 9, 10]]; // 점수
+let visited = new Array(N + 1);
+let max = -1;
+let ans = 0;
+
+
+// 초기화
+for(let v = 0; v <= 3 ; v++){
+    visited[v] = false;
+}
 
 ```
-let N = 4; // 종료지점 계속 변경
-let visited = new Array(N + 1);
-let ans = 0;
-back();
+
+> 2. BackTracking 함수 생성: 종료 조건에 리턴 및 
+
+```
 
 // Depth
-function back (depth) {
+function back (depth, count) {
+    <!-- console.log('ans', ans, 'depth', depth, 'count', count, N == depth); -->
     // 종료 조건
     if (N == depth) {
-        return Count++;
+        if(max < count){
+            ans = count;
+        }
+        return;
     }
 
     // 반복 조건
-    for (let i = 1 + depth ; i <= N; i++) {
-        if (!visited[i]) {
-            visited[i] = true;
-            Count++;
-            back(depth + 1, count++);
+    for (let i = 1 ; i <= N; i++) {
+        <!-- console.log('i', i, 'depth', depth, 'count', count); -->
+        let next = i;
+        <!-- visited[i] = true; // 현재 방문 지점 마킹 -->
+
+        if (!visited[next]) {
+            visited[next] = true;
+            count = count + arrData[depth+1][next];
+            back(depth + 1, count);
+            visited[next] = false;
         }
     }
 }
-```
-
-> 2. leafNode Size 계산:
-
-```
-function findLeafSize(int N) {
-    int count = 1;
-    while(N > count){
-        count *= 2;
-    }
-    return count - 1;
-}
-```
-
-> 3. indexTree 채우기
-
-```
-int leafSize = findLeafSize(N);
-
-BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-StringTokenizer st = new StringTokenizer(br.readLine());
-
-// ...
-
-st = new StringTokenizer(br.readLine());
-for(int i = leafSize + 1 ; i <= leafSize + N ; i++){
-    tree[i] = Integer.parseInt(st.nextToken());
-}
-
-function makeIndexTree (){
-    for(int i = leafSize ; i > 0 ; i--){
-        tree[i] = tree[i * 2] + tree[i * 2 + 1];
-    }
-}
 
 ```
 
-> 4. 조건에 따른 함수 생성: sum, update(swap)
+> 3. 함수 실행
 
 ```
-function sum (int a, int b){
-    int left = tree[a];
-    int right = tree[b];
 
+back(0, 0);
 
-}
-
-function update(int a, int b){
-
-}
+console.log('ans', ans);
 
 ```
+
 
 ---
 
