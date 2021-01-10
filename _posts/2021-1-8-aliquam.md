@@ -9,7 +9,7 @@ image: assets/images/notebook-dev.jpg
 
 어제 / 오늘 배운 알고리즘을 복습하기 위해 작성해 본다.
 
-# Index Tree: 포화 바이너리 트리 구조, 불할하여 계산할때 사용함
+# Index Tree: 포화 바이너리 트리 구조, 분할하여 계산할때 사용함
 
 ## 순서:
 
@@ -27,7 +27,7 @@ function findLeafSize(int N) {
     while(N > count){
         count *= 2;
     }
-    return count - 1;
+    return count - 1; // 처음 시작점을 찾기 위한 값으로 leafnode의 총 갯수 (ex. 3depth의 8이 아닌 7)로 리턴함
 }
 ```
 
@@ -57,15 +57,20 @@ function makeIndexTree (){
 > 4. 조건에 따른 함수 생성: sum, update(swap)
 
 ```
+let ans = 0;
+
 function sum (int a, int b){
-    int left = tree[a];
-    int right = tree[b];
+    int left = a + leafSize;
+    int right = b + leafSize;
 
+    if(a % 2 == 1) ans = ans + tree[left];
+    if(b % 2 == 0) ans = ans + tree[right];
 
+    <!-- ... 미완성 -->
 }
 
 function update(int a, int b){
-
+    <!-- ... 미완성 -->
 }
 
 ```

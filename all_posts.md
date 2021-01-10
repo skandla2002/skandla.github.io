@@ -1,12 +1,12 @@
 ---
 layout: allposts
-title: All posts
-landing-title: 'All posts'
+title: Write Something
+landing-title: "All posts"
 nav-menu: true
 description: null
 image: null
-author: null
+author: skandla2002@gmail.com
 show_tile: false
 ---
 
-<h1>All posts</h1>
+<h1>Write Something</h1>

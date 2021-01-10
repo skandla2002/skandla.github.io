@@ -5,14 +5,14 @@ description: TypeScript, 생산성
 image: assets/images/pic01.jpg
 ---
 
-# 오늘의 느낌:   
- 처음 opensource 에 대해 파악하고 PR 하고 싶은 프로젝트를 발견하여 소스 분석 중이다.
+# 오늘의 느낌:
+
+처음 opensource 에 대해 파악하고 PR 하고 싶은 프로젝트를 발견하여 소스 분석 중이다.  
  해당 프로젝트가 TypeScript를 기반으로 하고 있어, 지금 공부한 것을 바탕으로 진행 하고 싶다.
 
+# 타입 스크립트의 여러가지 타입 - 2
 
-# 타입 스크립트의 여러가지 타입 - 2   
-
-## 열거형 타입: enum 사용   
+## 열거형 타입: enum 사용
 
 ```
 enum Fruit {
@@ -80,7 +80,7 @@ const enum Lang {
 }
 ```
 
-## 함수 타입: 매개변수 타입과 반환 타입  
+## 함수 타입: 매개변수 타입과 반환 타입
 
 ```
 function getInfoText(name: string, age: number): string {
@@ -202,8 +202,8 @@ function getInfoText({ name, age = 15, lang }: Param): string {
 
 ```
 
----------
-+ 참고: 실전리액트프로그래밍 / 이재승 지음 / 인사이트
+---
 
+- 참고: 실전리액트프로그래밍 / 이재승 지음 / 인사이트
 
----------
+---
